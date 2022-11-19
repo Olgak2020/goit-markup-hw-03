@@ -5,65 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/style.css">
 </head>
- <body>
+   
+   <body>
           <!-- Header -->
-
+                        
       <header class="page-header">
-         <div class="container">
-            <nav class="header-nav list">
+         <div class="container header-page">
+          <nav class="header-nav list">
          <a href="index.html" class="logo">
             <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-      <ul class="nav list" >
-         <li><a href="./index.html" class="nav-studia link current">Студія</a></li>
-         <li><a href="./portfolio.html" class="nav-portfolio link">Портфоліо</a></li>
-         <li><a href="" class="nav-kontakt link">Контакти</a></li>
+      <ul class="nav list">
+         <li class="item"><a href="./index.html" class="nav-studia link current">Студія</a></li>
+         <li class="item"><a href="./portfolio.html" class="nav-portfolio link">Портфоліо</a></li>
+         <li class="item"><a href="" class="nav-kontakt link">Контакти</a></li>
       </ul> 
     </nav>
-      <ul class="auth-nav list">
-         <li><a href="mailto:info@devstudio.com" class="auth-info link">info@devstudio.com</a></li>
-         <li><a href="tel:+380961111111" class="auth-info link">+38 096 111 11 11</a></li>
-      </ul></div>
-    </header>
-   </div>
-  <main>
+    <nav class="auth-nav">
+         <ul class="auth-nav list">
+         <li class="item"><a href="mailto:info@devstudio.com" class="auth-info link">info@devstudio.com</a></li>
+         <li class="item"><a href="tel:+380961111111" class="auth-info link">+38 096 111 11 11</a></li>
+      </ul>
+   </nav>
+</div> 
+           </header>
+     
+   <main>
                          <!-- Hero -->
-
+    
     <section class="section-hero">
-      <div class="container">
+      <div class="container hero-title">
          <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
-         <button type="button" class="primary-button">Замовити послугу</button>
+          <button type="button" class="primary-button">Замовити послугу</button>
     </div>
    </section>
-                       <!-- Feature -->
 
+                       <!-- Feature -->
+    
    <section class="section-feature">
-      <div class="container">
+      <div class="container ">
          <ul class="feature list">
-         <li> 
+
+         <li class="item"> 
             <h2 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h2>
          <p class="feature-text">Ідейні міркування, і 
             навіть початок повсякденної роботи з формування 
             позиції</p>
          </li>
-         <li>
+
+         <li class="item">
              <h2 class="feature-title">ПУНКТУАЛЬНІСТЬ</h2>
             <p class="feature-text">Завдання організації, особливо рамки 
                і місце навчання кадрів тягне у себе.</p>
          </li>
-         <li>
+
+         <li class="item">
             <h2 class="feature-title">ПЛАНУВАННЯ</h2>
                <p class="feature-text" >Так само консультація з широким
                    активом значною мірою зумовлює.</p>
          </li>
-         <li>
+
+         <li class="item">
             <h2 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
                <p class="feature-text">Значимість цих проблем настільки
                    очевидна, що реалізація планових 
@@ -72,67 +81,100 @@
       </ul>
    </div>
    </section>
-                     <!-- Business -->
 
-   <section class="section-job">
+                     <!-- Business -->
+    
+   <section class="section-business">
       <div class="container">
       <h2 class="business-title">Чим ми займаємося</h2>
    <ul class="business list">
-      <li> 
+      <li class="item"> 
          <img src="./images/boxone.jpg" width="370" alt="работа на компьютере ">
       </li>
-      <li>
+
+      <li class="item">
          <img src="./images/boxsecond.jpg"  width="370" alt="использование мобильного телефона">
       </li>
-      <li>
+
+      <li class="item">
          <img src="./images/boxthird.jpg"  width="370" alt="работа на планшете">
       </li>
    </ul>
    </div>
    </section>
+
    <!-- Team -->
 
-   <section class="section-team "> 
+   <section class="section-team section"> 
       <div class="container">
       <h2 class="title-team">Наша команда</h2>
-      <ul class="list">
+      <ul class="team-list list">
+
         <li class="card">
+         
                      <img src="./images/imgone.jpg" width="270" alt="фотография мужчины">
-            <h3 class="team-title">Ігор Дем'яненко</h3>
+            <div class="card-team">
+                     <h3 class="team-title">Ігор Дем'яненко</h3>
             <p class="team-text">Product Designer</p>
+         </div>
                  </li>
+
         <li class="card">
                      <img src="./images/imgsecond.jpg" width="270" alt="фото женцины">
-            <h3 class="team-title">Ольга Рєпіна</h3>
-            <p class="team-text">Frontend Developer</p>
+            
+                     <div class="card-team">
+                     <h3 class="team-title">Ольга Рєпіна</h3>
+            <p class="team-text">Frontend Developer</p></div>
                  </li>
+
         <li class="card">
                       <img src="./images/imgthird.jpg" width="270" alt="фото мужчины"> 
-            <h3 class="team-title">Микола Тарасов</h3>
-            <p class="team-text" >Marketing</p>
+                      <div class="card-team">
+                      <h3 class="team-title">Микола Тарасов</h3>
+            <p class="team-text" >Marketing</p></div>
                   </li>
+
          <li class="card">
                        <img src="./images/imgfourth.jpg" width="270" alt="фото мужчины">
-             <h3 class="team-title">Михайло Єрмаков</h3>
-             <p class="team-text">UI Designer</p>
+             
+                       <div class="card-team">
+                       <h3 class="team-title">Михайло Єрмаков</h3>
+             <p class="team-text">UI Designer</p> 
+            </div>
                    </li>
       </ul>
    </div>
    </section>
-     <!-- Clients -->
-       <section class="clients">
-         <ul class="const-clients">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+
+       <!-- Clients -->
+
+<section class="section-clients section">
+<div class="container">
+      <h2 class="clients-title">Постійні клієнти</h2>
+            <ul class="const-clients">
+            <li class="button-icon"><a href="" class="client1"></a>
+
+            </li>
+            <li class="button-icon"><a href="" class="client2" ></a>
+
+            </li>
+            <li class="button-icon"><a href="" class="client3"></a>
+
+            </li>
+            <li class="button-icon"><a href="" class="client4"></a>
+
+            </li>
+            <li class="button-icon"><a href="" class="client5"></a>
+
+            </li>
+            <li class="button-icon"><a href="" class="client6"></a>
+
+            </li>
          </ul>
-
-            </section>
-</main>
-
+</div>
+</section>
+            </main>
+         
   <!-- Footer  -->
 
   <footer class="footer">
@@ -149,8 +191,13 @@
       </li>
    </ul>
    </address>
-</div>
-  </footer>  
- </body>
+   </div>
+   </footer>
+ 
+
+   </body>
+   
+
+  
  </html>     
                                                                                
