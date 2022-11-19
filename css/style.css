@@ -14,6 +14,7 @@ body{
     box-sizing: border-box;
     color:var(--text-color);
     font-family: Roboto, sans-serif;
+    background-color: var( --primary-bg-color);
 }
 /* колір основного тексту color: #212121; 
    колір другорядного тексту  color:#757575; 
@@ -39,7 +40,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
-     height: auto.
+     height: auto;
 }
 .visually-hidden{
     position: absolute;
@@ -96,45 +97,30 @@ img {
     text-decoration: none;
   
 }
-
-
- /* .list  .project-text{ 
-    /* outline: 1px solid tomato; 
-} */ 
+ 
 
 /*--------------------Header---------------- */
-.header-page,.header-nav{
-    display: flex;
-} 
 
-.nav{
-     margin-left:var(--common-gap);
-    margin-right: 318px; 
-}
-
- 
-.auth-nav{
+.header-page{
     display: flex;
-    
 }
-.auth-nav > .item{
-    padding-top:40px ;
-} 
+.header-nav{
+          display: flex;
+        align-items: center;
+ }
 
 .page-header{
 
-border-style:solid;
-border-color:  #ECECEC;
+border-bottom:1px solid #ECECEC;
+
 background-color:var(--title-hero-color);
 }
 
-.header-nav > .logo{
-     padding-top: 30px ; 
-    
-}
 
 .header-nav .link {
+    
    color:var(--title-color);
+   display: block;
 
    font-weight: 500;
    font-size: 14px;
@@ -152,15 +138,19 @@ background-color:var(--title-hero-color);
 
 /*--------------------- Navigation---------------- */
 .nav{
-    
-    padding-bottom: 40px;
-    display: flex;
 
-     color:var(--title-color);
+margin-left:var(--common-gap);
+display: flex;
+
+color:var(--title-color);
   }
-
-   .nav .item +.item{
+  
+ .nav .item +.item{
   margin-left: 50px; 
+ } 
+
+ .nav .link{
+    padding: 32px 0;
  }
 
 .nav .link.current
@@ -171,14 +161,20 @@ background-color:var(--title-hero-color);
  {
     color:var(--accent-color);
 }  
+.auth-nav{
 
-  .auth-nav .item + .item{
-    margin-left: 30px;
-}  
-
-.nav > .item{
-    padding-top:40px ;
+    display: flex;
+    align-items: center;
+    margin-left:auto ;
+    
 }
+ .auth-nav .item + .item{
+    margin-left: 50px;
+}   
+.auth-nav .link{
+    padding: 32px 0;
+}
+
     /* -------------------Address--------------- */
 .auth-tel{
     color:var(--text-color);
@@ -225,16 +221,16 @@ background-color:var(--title-hero-color);
 /*--------------------Hero------------*/
 
 .section-hero{
-    display: block;
 
      text-align: center;
-     height: 600px;
+     padding:200px 0 ;
     
    background:var(--secondary-bg-color) ;
 }
 .hero-title > .title-hero{
-   padding-top: 200px;
-   margin-bottom:30px; 
+  
+   margin: 0 auto 30px; 
+   width: 696px;
 
     color: var(--title-hero-color);
     
@@ -255,7 +251,7 @@ background-color:var(--title-hero-color);
 /* ---------------Section feature--------------- */
 .section-feature{
     padding-top: var(--common-gap);
-  padding-bottom:var(--common-gap) ;
+  
   margin-left: auto;
   margin-right: auto;
      
@@ -268,6 +264,8 @@ background-color:var(--title-hero-color);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px; 
+    
  }
 
 .feature-text{
@@ -280,8 +278,7 @@ background-color:var(--title-hero-color);
 
 .feature {
     display: flex; 
-    padding:0 ;
-    margin: 0px;
+    gap: 30px;
     /* outline: 1px solid tomato; */
     
    }
@@ -290,14 +287,10 @@ background-color:var(--title-hero-color);
     flex-basis: calc(100% / 4);
     
    }
-.feature-title{
-    margin-bottom: 10.73px; 
-    margin-top: 32.18px;
-}
- 
+
 /* ---------------Section-business---------------*/
 .section-business{
-  padding-bottom: var(--common-gap);
+  
   padding-top: var(--common-gap);
   
   }
@@ -309,7 +302,7 @@ background-color:var(--title-hero-color);
 .business-title,
 .title-team{
   padding-top: var(--common-gap);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     color:var(--title-color) ;
     font-weight: 700;
@@ -334,7 +327,7 @@ calk-100%- sum mar / n
 }* 1:16 min video N 6/
 /* ---------------Section-team ---------------*/
 .section-team{
-    padding-bottom: var(--common-gap);
+    /* padding-bottom: var(--common-gap); */
     padding-top: var(--common-gap);
     background-color:var(--bg-color) ;
     }
@@ -355,8 +348,8 @@ calk-100%- sum mar / n
     padding-top: var(--common-gap);
 }
 .team-title{
-  
-
+    margin-bottom: 10px;
+    
     color: var(--title-color);  
    font-weight: 500;
    font-size: 16px;
@@ -373,8 +366,9 @@ calk-100%- sum mar / n
 .card-team{
     padding-top:30px;
     padding-bottom:16px ;
-    padding-left: 32px;
-    padding-right:32px ;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    
 }
 
 .team-text{
@@ -387,7 +381,7 @@ calk-100%- sum mar / n
 }
 /* ---------------Clients-------------- */
 .section-clients {
-    padding-bottom: var(--common-gap);
+    
     padding-top: var(--common-gap);
  }
 
@@ -413,25 +407,29 @@ letter-spacing: 3%;
     background-color:var(--secondary-bg-color) ;
     text-decoration: none;
     padding-top:60px ;
+    padding-bottom: 60px;
 }
 .footer-info:hover,
 .footer-info:focus{
     color: var(--accent-color);
  }
    
-.footer-info{
-    padding-top: 10px;
-    padding-bottom: 10px;
-} 
 .footer-nav{
-padding-bottom: 62px; ;
-margin-top:20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+} 
+.logo-foot{
+  display: inline-block;
+    margin-bottom:20px ;
 }
-
+ 
  /* --------Portfolio-------- */
 .section-portfolio{
-    padding-bottom: var(--common-gap);
-  
+  padding-bottom: var(--common-gap);
+  padding-top: var(--common-gap);
+    
 }
 /* ---------------Portfolio-filters ---------------*/
 .portfolio-filter{
@@ -452,20 +450,16 @@ margin-top:20px ;
 }
 
 /* ----------------project-portfolio--------------- */
-.section-portfolio{
-    padding-top: var(--common-gap);
-    
-} 
-.card-item{
 
-border-style: 1px solid;
-border-color: #EEEEEE ;
-
-
-}
 
 .card-text{
-    padding: 20px 24px;
+padding: 20px 24px;
+
+border: 1px solid;
+border-color: #EEEEEE ;
+border-top: none;
+
+    
 }
 
 .project-list{
@@ -487,7 +481,7 @@ border-color: #EEEEEE ;
 }
 .project-title{
    color:var(--title-color);
-
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
