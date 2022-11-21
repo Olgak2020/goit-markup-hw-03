@@ -291,7 +291,7 @@ color:var(--title-color);
 
 /* ---------------Section-business---------------*/
 .section-business{
-  
+  padding-bottom: var(--common-gap);
   padding-top: var(--common-gap);
   
   }
@@ -300,16 +300,23 @@ color:var(--title-color);
     margin-right: auto;
 }
 
-.business-title,
-.title-team{
+.pre-title{
+
+    
     margin-bottom: 50px;
 
-    color:var(--title-color) ;
-    font-weight: 700;
+    color: solid var(--title-color) ;
+    Font-style: Bold;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    Vertical-align: Top;
+    line-height: 100%
+   
+    
+
+
 }
 
 .business > .item{
@@ -344,9 +351,6 @@ calk-100%- sum mar / n
 }
 
 
-.title-team{
-    padding-top: var(--common-gap);
-}
 .team-title{
     margin-bottom: 10px;
     
